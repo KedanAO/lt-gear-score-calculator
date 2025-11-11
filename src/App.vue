@@ -734,7 +734,7 @@ onUpdated(() => {
       <!-- Total result -->
       <div class="results-total results-footer">
         <!-- Total result text -->
-        <div class="results-tiers" @click="readURL(generateURL())">
+        <div class="results-tiers">
           <span>TOTAL</span>
           <span class="fugaz-one-regular">
             <span v-if="switchState">{{ results['DI'] }}%</span>
