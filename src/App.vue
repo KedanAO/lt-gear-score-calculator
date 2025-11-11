@@ -589,7 +589,6 @@ onUpdated(() => {
         </div>
       </span>
     </span>
-    {{ console.log(imgUrls) }}
   </div>
   <!-- Stat Input -->
   <div id="calculator-container">
