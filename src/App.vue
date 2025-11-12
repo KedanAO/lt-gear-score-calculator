@@ -28,12 +28,15 @@ const imgUrls = import.meta.glob('./assets/*.png', {
   eager: true,
 })
 
+// Check if disclaimer has been accepted before
+const hasSeenDisclaimer = localStorage.getItem('ltGearCalculatorDisclaimerAccepted') === 'true'
+
 const displayWindow = ref({
-  'disclaimer': true, // Open on disclaimer
+  'disclaimer': !hasSeenDisclaimer, // Only open on disclaimer if not seen before
   'gear': false,
   'help': 0,
 })
-const dimmed = ref(true)
+const dimmed = ref(!hasSeenDisclaimer)
 const switchState = ref(false)
 
 const helpStoredInfo = ref({
@@ -332,6 +335,10 @@ function toggleDisplayWindow(selection) {
   }
   // If not in help cycle
   else {
+    // Save disclaimer acceptance when closing it
+    if (displayWindow.value['disclaimer'] && (selection === 'none' || selection !== 'disclaimer')) 
+      localStorage.setItem('ltGearCalculatorDisclaimerAccepted', 'true')
+
     // Check which window is to be activated, turn it on and turn off every other window
     for (let w in displayWindow.value) {
       if (w === selection && !displayWindow.value[w]) { displayWindow.value[w] = true }
