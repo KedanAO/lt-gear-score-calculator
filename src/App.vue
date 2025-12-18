@@ -10,9 +10,9 @@ import StatOption from './component/StatOption.vue';
 import gears from './utils/gear.js'
 import tiers from './utils/tiers.js'
 
-const gearType = ref('[9999] Badge 6')
-const pieceType = ref('Badge')
-const highlightedPiece = ref(['[9999] Badge 6', 'Badge'])
+const gearType = ref('[9999] Armor')
+const pieceType = ref('Helmet')
+const highlightedPiece = ref(['[9999] Armor', 'Helmet'])
 const valueButton = ref(90)
 
 const pieceOptions = ref('')
@@ -964,11 +964,14 @@ onUpdated(() => {
       <div>
         <h3>Important notes</h3>
         <ul>
-          <li><span>Numbers are currently based on 1 Attack/Intensity = 110 Strength/Magic. If you want more detailed tests with more stats and items, please use the <a href="https://kedanao.github.io/lt-damage-calculator/" target="_blank">Damage Calculator</a></span> and detailed sheets linked below</li>
+          <li><span>If you want more detailed tests with more stats and items, please use the <a href="https://kedanao.github.io/lt-damage-calculator/" target="_blank">Damage Calculator</a></span> and detailed sheets linked below</li>
           <li><span>Ratings are based on <strong style="color: blue;">+0 unupgraded enchant values</strong>, note that <strong style="color: blue;">extra stats from level 3~5 enchants will increase the score and cannot be considered the same as +0 enchants</strong></span></li>
           <li><strong>Minimum Damage</strong>: Value only applies as long as your Minimum is lower than your Maximum. Any amount above is wasted</li>
-          <li><strong>Attack/Intensity vs Strength/Magic</strong>: Older items (8k and below) utilize 1:100 ratio, while newer items (9k and above) use 1:110
-          <br>Note that the calculator also considers higher strength/magic % than attack/intensity %, and a value of 17% strength/magic ratio for 9999 and above, 12% for under
+          <li><strong>Attack/Intensity vs Strength/Magic in new items</strong>: Strength/Magic and Attack/Intensity will have the same value unless there's a major difference between them.
+          <br>It is encouraged to check which stat your class benefits from more and focus on that
+          <br>This will begin with 9999 armor</li>
+          <li><strong>Attack/Intensity vs Strength/Magic in older items</strong>: Older items use a ratio of 1 attack : 100 ~ 110 strength
+          <br>Note that the calculator also considers higher strength/magic % than attack/intensity %, and a value of 12% strength/magic ratio
           <br>Generally this means flat strength/magic is superior to flat attack/intensity, however attack/intensity % is superior to strength/magic %
           <br>If you want to consider different numbers, please use the <a href="https://kedanao.github.io/lt-damage-calculator/" target="_blank">Damage Calculator</a> with your own stats and settings</li>
           <li><strong>Defense Penetration</strong>: Does not apply to summons, avoid in summon-heavy classes</li>

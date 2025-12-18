@@ -935,23 +935,23 @@ const tiers  = {
         "Trio": "65%",
         "Quad": "55%",
         "Penta": "46%",
-        "Score": "46% - 56%"
+        "Score": "46% - 55%"
       },
       "B":{
         "Single": "--",
         "Duo": "--",
         "Trio": "80%",
         "Quad": "65%",
-        "Penta": "57%",
-        "Score": "57% - 64%"
+        "Penta": "56%",
+        "Score": "56% - 63%"
       },
       "A":{
         "Single": "--",
         "Duo": "--",
         "Trio": "100%",
         "Quad": "75%",
-        "Penta": "65%",
-        "Score": "65% - 72%"
+        "Penta": "64%",
+        "Score": "64% - 71%"
       },
       "S":{
         "Single": "--",

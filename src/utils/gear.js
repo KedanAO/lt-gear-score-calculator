@@ -1,393 +1,393 @@
 const gears = {
-  // "[9999] Armor":{
-  //   "Helmet":{
-  //     "DI": 6.378,
-  //     "Stats":{
-  //       "Critical Damage":{
-  //         "Value": 121,
-  //         "DI": 1.727,
-  //         "Potential": [18,18]
-  //       },
-  //       "Normal Amplification":{
-  //         "Value": 5.1,
-  //         "DI": 1.584,
-  //         "Potential": [0.8,0.8]
-  //       },
-  //       "Basic Stats": {
-  //         "Value": 19001,
-  //         "DI": 1.008,
-  //         "Potential": [2850,2850]
-  //       },
-  //       "Attack/Intensity": {
-  //         "Value": 241,
-  //         "DI": 1.196,
-  //         "Potential": [36,36]
-  //       },
-  //       "Accuracy": {
-  //         "Value": 171,
-  //         "DI": 0.863,
-  //         "Potential": [25,25]
-  //       },
-  //       "Strength/Magic": {
-  //         "Value": 24001,
-  //         "DI": 1.273,
-  //         "Potential": [3600,3600]
-  //       },
-  //       "Minimum Damage": {
-  //         "Value": 151,
-  //         "DI": 1.462,
-  //         "Potential": [22,22]
-  //       },
-  //       "Back Attack Damage":{
-  //         "Value": 121,
-  //         "DI": 0.863,
-  //         "Potential": [18,18]
-  //       },
-  //       "Static Damage %": {
-  //         "Value": 20,
-  //         "DI": 0.637,
-  //         "Potential": [3,3]
-  //       },
-  //       "Boss Added Damage":{
-  //         "Value": 48001,
-  //         "DI": 0.223,
-  //         "Potential": [7200,7200]
-  //       },
-  //       "Normal Added Damage":{
-  //         "Value": 48001,
-  //         "DI": 0.176,
-  //         "Potential": [7200,7200]
-  //       },
-  //       "Stamina": {
-  //         "Value": 24001,
-  //         "DI": 0,
-  //         "Potential": [3600,3600]
-  //       },
-  //       "Maximum HP %": {
-  //         "Value": 13,
-  //         "DI": 0,
-  //         "Potential": [1,1]
-  //       },
-  //       "Other (Non-damaging)": {
-  //         "Value": 1,
-  //         "DI": 0,
-  //         "Potential": [1,1]
-  //       },
-  //     },
-  //     "Optimal": ["Critical Damage", "Normal Amplification", "Basic Stats", "Attack/Intensity", "Accuracy"],
-  //     "Type": "Type A"
-  //   },
-  //   "Chestplate":{
-  //     "DI": 7.757,
-  //     "Stats":{
-  //       "Maximum Damage":{
-  //         "Value": 121,
-  //         "DI": 1.118,
-  //         "Potential": [18,18]
-  //       },
-  //       "Basic Stats %":{
-  //         "Value": 25,
-  //         "DI": 2.336,
-  //         "Potential": [4,4]
-  //       },
-  //       "Attack/Intensity %":{
-  //         "Value": 20,
-  //         "DI": 2.099,
-  //         "Potential": [3,3]
-  //       },
-  //       "Basic Stats": {
-  //         "Value": 19001,
-  //         "DI": 1.008,
-  //         "Potential": [2850,2850]
-  //       },
-  //       "Attack/Intensity": {
-  //         "Value": 241,
-  //         "DI": 1.196,
-  //         "Potential": [36,36]
-  //       },
-  //       "Strength/Magic": {
-  //         "Value": 24001,
-  //         "DI": 1.273,
-  //         "Potential": [3600,3600]
-  //       },
-  //       "Minimum Damage": {
-  //         "Value": 151,
-  //         "DI": 1.462,
-  //         "Potential": [22,22]
-  //       },
-  //       "Static Damage %": {
-  //         "Value": 20,
-  //         "DI": 0.637,
-  //         "Potential": [3,3]
-  //       },
-  //       "Back Attack Damage":{
-  //         "Value": 121,
-  //         "DI": 0.863,
-  //         "Potential": [18,18]
-  //       },
-  //       "Boss Added Damage":{
-  //         "Value": 48001,
-  //         "DI": 0.223,
-  //         "Potential": [7200,7200]
-  //       },
-  //       "Normal Added Damage":{
-  //         "Value": 48001,
-  //         "DI": 0.176,
-  //         "Potential": [7200,7200]
-  //       },
-  //       "Stamina": {
-  //         "Value": 24001,
-  //         "DI": 0,
-  //         "Potential": [3600,3600]
-  //       },
-  //       "Maximum HP %": {
-  //         "Value": 13,
-  //         "DI": 0,
-  //         "Potential": [1,1]
-  //       },
-  //       "Other (Non-damaging)": {
-  //         "Value": 1,
-  //         "DI": 0,
-  //         "Potential": [1,1]
-  //       },
-  //     },
-  //     "Optimal": ["Maximum Damage", "Basic Stats %", "Attack/Intensity %", "Basic Stats", "Attack/Intensity"],
-  //     "Type": "Type A"
-  //   },
-  //   "Fauld":{
-  //     "DI": 7.757,
-  //     "Stats":{
-  //       "Maximum Damage":{
-  //         "Value": 121,
-  //         "DI": 1.118,
-  //         "Potential": [18,18]
-  //       },
-  //       "Basic Stats %":{
-  //         "Value": 25,
-  //         "DI": 2.336,
-  //         "Potential": [4,4]
-  //       },
-  //       "Attack/Intensity %":{
-  //         "Value": 20,
-  //         "DI": 2.099,
-  //         "Potential": [3,3]
-  //       },
-  //       "Basic Stats": {
-  //         "Value": 19001,
-  //         "DI": 1.008,
-  //         "Potential": [2850,2850]
-  //       },
-  //       "Attack/Intensity": {
-  //         "Value": 241,
-  //         "DI": 1.196,
-  //         "Potential": [36,36]
-  //       },
-  //       "Strength/Magic": {
-  //         "Value": 24001,
-  //         "DI": 1.273,
-  //         "Potential": [3600,3600]
-  //       },
-  //       "Minimum Damage": {
-  //         "Value": 151,
-  //         "DI": 1.462,
-  //         "Potential": [22,22]
-  //       },
-  //       "Static Damage %": {
-  //         "Value": 20,
-  //         "DI": 0.637,
-  //         "Potential": [3,3]
-  //       },
-  //       "Back Attack Damage":{
-  //         "Value": 121,
-  //         "DI": 0.863,
-  //         "Potential": [18,18]
-  //       },
-  //       "Boss Added Damage":{
-  //         "Value": 48001,
-  //         "DI": 0.223,
-  //         "Potential": [7200,7200]
-  //       },
-  //       "Normal Added Damage":{
-  //         "Value": 48001,
-  //         "DI": 0.176,
-  //         "Potential": [7200,7200]
-  //       },
-  //       "Stamina": {
-  //         "Value": 24001,
-  //         "DI": 0,
-  //         "Potential": [3600,3600]
-  //       },
-  //       "Maximum HP %": {
-  //         "Value": 13,
-  //         "DI": 0,
-  //         "Potential": [1,1]
-  //       },
-  //       "Other (Non-damaging)": {
-  //         "Value": 1,
-  //         "DI": 0,
-  //         "Potential": [1,1]
-  //       },
-  //     },
-  //     "Optimal": ["Maximum Damage", "Basic Stats %", "Attack/Intensity %", "Basic Stats", "Attack/Intensity"],
-  //     "Type": "Type A"
-  //   },
-  //   "Gloves":{
-  //     "DI": 7.622,
-  //     "Stats":{
-  //       "Critical Damage":{
-  //         "Value": 121,
-  //         "DI": 1.727,
-  //         "Potential": [18,18]
-  //       },
-  //       "Attack/Intensity %":{
-  //         "Value": 20,
-  //         "DI": 2.099,
-  //         "Potential": [3,3]
-  //       },
-  //       "Boss Amplification":{
-  //         "Value": 5.1,
-  //         "DI": 1.592,
-  //         "Potential": [0.8,0.8]
-  //       },
-  //       "Basic Stats": {
-  //         "Value": 19001,
-  //         "DI": 1.008,
-  //         "Potential": [2850,2850]
-  //       },
-  //       "Attack/Intensity": {
-  //         "Value": 241,
-  //         "DI": 1.196,
-  //         "Potential": [36,36]
-  //       },
-  //       "Strength/Magic": {
-  //         "Value": 24001,
-  //         "DI": 1.273,
-  //         "Potential": [3600,3600]
-  //       },
-  //       "Minimum Damage": {
-  //         "Value": 151,
-  //         "DI": 1.462,
-  //         "Potential": [22,22]
-  //       },
-  //       "Static Damage %": {
-  //         "Value": 20,
-  //         "DI": 0.637,
-  //         "Potential": [3,3]
-  //       },
-  //       "Back Attack Damage":{
-  //         "Value": 121,
-  //         "DI": 0.863,
-  //         "Potential": [18,18]
-  //       },
-  //       "Boss Added Damage":{
-  //         "Value": 48001,
-  //         "DI": 0.223,
-  //         "Potential": [7200,7200]
-  //       },
-  //       "Normal Added Damage":{
-  //         "Value": 48001,
-  //         "DI": 0.176,
-  //         "Potential": [7200,7200]
-  //       },
-  //       "Stamina": {
-  //         "Value": 24001,
-  //         "DI": 0,
-  //         "Potential": [3600,3600]
-  //       },
-  //       "Maximum HP %": {
-  //         "Value": 13,
-  //         "DI": 0,
-  //         "Potential": [1,1]
-  //       },
-  //       "Other (Non-damaging)": {
-  //         "Value": 1,
-  //         "DI": 0,
-  //         "Potential": [1,1]
-  //       },
-  //     },
-  //     "Optimal": ["Critical Damage", "Attack/Intensity %", "Boss Amplification", "Basic Stats", "Attack/Intensity"],
-  //     "Type": "Type A"
-  //   },
-  //   "Boots":{
-  //     "DI": 7.386,
-  //     "Stats":{
-  //       "Critical Damage":{
-  //         "Value": 151,
-  //         "DI": 2.155,
-  //         "Potential": [22,22]
-  //       },
-  //       "Basic Stats %":{
-  //         "Value": 25,
-  //         "DI": 2.336,
-  //         "Potential": [4,4]
-  //       },
-  //       "Attack/Intensity": {
-  //         "Value": 241,
-  //         "DI": 1.196,
-  //         "Potential": [36,36]
-  //       },
-  //       "Basic Stats": {
-  //         "Value": 19001,
-  //         "DI": 1.008,
-  //         "Potential": [2850,2850]
-  //       },
-  //       "Movement Speed": {
-  //         "Value": 171,
-  //         "DI": 0.691,
-  //         "Potential": [25,25]
-  //       },
-  //       "Strength/Magic": {
-  //         "Value": 24001,
-  //         "DI": 1.273,
-  //         "Potential": [3600,3600]
-  //       },
-  //       "Boss Added Damage":{
-  //         "Value": 48001,
-  //         "DI": 0.223,
-  //         "Potential": [7200,7200]
-  //       },
-  //       "Normal Added Damage":{
-  //         "Value": 48001,
-  //         "DI": 0.176,
-  //         "Potential": [7200,7200]
-  //       },
-  //       "Stamina": {
-  //         "Value": 24001,
-  //         "DI": 0,
-  //         "Potential": [3600,3600]
-  //       },
-  //       "Maximum HP %": {
-  //         "Value": 13,
-  //         "DI": 0,
-  //         "Potential": [1,1]
-  //       },
-  //       "Other (Non-damaging)": {
-  //         "Value": 1,
-  //         "DI": 0,
-  //         "Potential": [1,1]
-  //       },
-  //       "Minimum Damage": {
-  //         "Value": 151,
-  //         "DI": 1.462,
-  //         "Potential": [22,22]
-  //       },
-  //       "Static Damage %": {
-  //         "Value": 20,
-  //         "DI": 0.637,
-  //         "Potential": [3,3]
-  //       },
-  //       "Back Attack Damage":{
-  //         "Value": 121,
-  //         "DI": 0.863,
-  //         "Potential": [18,18]
-  //       },   
-  //     },
-  //     "Optimal": ["Critical Damage", "Basic Stats %", "Attack/Intensity", "Basic Stats", "Movement Speed"],
-  //     "Type": "Type A"
-  //   },
-  //   "Sheet Link": "https://docs.google.com/spreadsheets/d/11CI-FMnoX1_D9oPgbY1cAKplOdvaOkkPzZnJ6-3l7IU/edit?usp=sharing",
-  //   "Potential": [0.15, 0.15]
-  // },
+  "[9999] Armor":{
+    "Helmet":{
+      "DI": 6.355,
+      "Stats":{
+        "Critical Damage":{
+          "Value": 121,
+          "DI": 1.824,
+          "Potential": [15,15]
+        },
+        "Normal Amplification":{
+          "Value": 5.1,
+          "DI": 1.541,
+          "Potential": [0.3,0.3]
+        },
+        "Basic Stats": {
+          "Value": 19001,
+          "DI": 0.918,
+          "Potential": [2300,2300]
+        },
+        "Attack/Intensity": {
+          "Value": 241,
+          "DI": 1.160,
+          "Potential": [30,30]
+        },
+        "Accuracy": {
+          "Value": 171,
+          "DI": 0.912,
+          "Potential": [20,20]
+        },
+        "Strength/Magic": {
+          "Value": 24001,
+          "DI": 1.160,
+          "Potential": [3000,3000]
+        },
+        "Minimum Damage": {
+          "Value": 151,
+          "DI": 1.480,
+          "Potential": [18,18]
+        },
+        "Back Attack Damage":{
+          "Value": 121,
+          "DI": 1.161,
+          "Potential": [15,15]
+        },
+        "Static Damage %": {
+          "Value": 20,
+          "DI": 0.647,
+          "Potential": [1,1]
+        },
+        "Boss Added Damage":{
+          "Value": 48001,
+          "DI": 0.238,
+          "Potential": [6000,6000]
+        },
+        "Normal Added Damage":{
+          "Value": 48001,
+          "DI": 0.186,
+          "Potential": [6000,6000]
+        },
+        "Stamina": {
+          "Value": 24001,
+          "DI": 0,
+          "Potential": [3000,3000]
+        },
+        "Maximum HP %": {
+          "Value": 13,
+          "DI": 0,
+          "Potential": [1,1]
+        },
+        "Other (Non-damaging)": {
+          "Value": 1,
+          "DI": 0,
+          "Potential": [1,1]
+        },
+      },
+      "Optimal": ["Critical Damage", "Normal Amplification", "Basic Stats", "Attack/Intensity", "Accuracy"],
+      "Type": "Type A"
+    },
+    "Chestplate":{
+      "DI": 7.671,
+      "Stats":{
+        "Maximum Damage":{
+          "Value": 121,
+          "DI": 1.116,
+          "Potential": [15,15]
+        },
+        "Basic Stats %":{
+          "Value": 25,
+          "DI": 2.130,
+          "Potential": [1,1]
+        },
+        "Attack/Intensity %":{
+          "Value": 20,
+          "DI": 2.347,
+          "Potential": [1,1]
+        },
+        "Basic Stats": {
+          "Value": 19001,
+          "DI": 0.918,
+          "Potential": [2300,2300]
+        },
+        "Attack/Intensity": {
+          "Value": 241,
+          "DI": 1.160,
+          "Potential": [30,30]
+        },
+        "Strength/Magic": {
+          "Value": 24001,
+          "DI": 1.160,
+          "Potential": [3000,3000]
+        },
+        "Minimum Damage": {
+          "Value": 151,
+          "DI": 1.480,
+          "Potential": [18,18]
+        },
+        "Back Attack Damage":{
+          "Value": 121,
+          "DI": 1.161,
+          "Potential": [15,15]
+        },
+        "Static Damage %": {
+          "Value": 20,
+          "DI": 0.647,
+          "Potential": [1,1]
+        },
+        "Boss Added Damage":{
+          "Value": 48001,
+          "DI": 0.238,
+          "Potential": [6000,6000]
+        },
+        "Normal Added Damage":{
+          "Value": 48001,
+          "DI": 0.186,
+          "Potential": [6000,6000]
+        },
+        "Stamina": {
+          "Value": 24001,
+          "DI": 0,
+          "Potential": [3000,3000]
+        },
+        "Maximum HP %": {
+          "Value": 13,
+          "DI": 0,
+          "Potential": [1,1]
+        },
+        "Other (Non-damaging)": {
+          "Value": 1,
+          "DI": 0,
+          "Potential": [1,1]
+        },
+      },
+      "Optimal": ["Maximum Damage", "Basic Stats %", "Attack/Intensity %", "Basic Stats", "Attack/Intensity"],
+      "Type": "Type A"
+    },
+    "Fauld":{
+      "DI": 7.671,
+      "Stats":{
+       "Maximum Damage":{
+          "Value": 121,
+          "DI": 1.116,
+          "Potential": [15,15]
+        },
+        "Basic Stats %":{
+          "Value": 25,
+          "DI": 2.130,
+          "Potential": [1,1]
+        },
+        "Attack/Intensity %":{
+          "Value": 20,
+          "DI": 2.347,
+          "Potential": [1,1]
+        },
+        "Basic Stats": {
+          "Value": 19001,
+          "DI": 0.918,
+          "Potential": [2300,2300]
+        },
+        "Attack/Intensity": {
+          "Value": 241,
+          "DI": 1.160,
+          "Potential": [30,30]
+        },
+        "Strength/Magic": {
+          "Value": 24001,
+          "DI": 1.160,
+          "Potential": [3000,3000]
+        },
+        "Minimum Damage": {
+          "Value": 151,
+          "DI": 1.480,
+          "Potential": [18,18]
+        },
+        "Back Attack Damage":{
+          "Value": 121,
+          "DI": 1.161,
+          "Potential": [15,15]
+        },
+        "Static Damage %": {
+          "Value": 20,
+          "DI": 0.647,
+          "Potential": [1,1]
+        },
+        "Boss Added Damage":{
+          "Value": 48001,
+          "DI": 0.238,
+          "Potential": [6000,6000]
+        },
+        "Normal Added Damage":{
+          "Value": 48001,
+          "DI": 0.186,
+          "Potential": [6000,6000]
+        },
+        "Stamina": {
+          "Value": 24001,
+          "DI": 0,
+          "Potential": [3000,3000]
+        },
+        "Maximum HP %": {
+          "Value": 13,
+          "DI": 0,
+          "Potential": [1,1]
+        },
+        "Other (Non-damaging)": {
+          "Value": 1,
+          "DI": 0,
+          "Potential": [1,1]
+        },
+      },
+      "Optimal": ["Maximum Damage", "Basic Stats %", "Attack/Intensity %", "Basic Stats", "Attack/Intensity"],
+      "Type": "Type A"
+    },
+    "Gloves":{
+      "DI": 7.791,
+      "Stats":{
+        "Critical Damage":{
+          "Value": 121,
+          "DI": 1.824,
+          "Potential": [15,15]
+        },
+        "Attack/Intensity %":{
+          "Value": 20,
+          "DI": 2.347,
+          "Potential": [1,1]
+        },
+        "Boss Amplification":{
+          "Value": 5.1,
+          "DI": 1.542,
+          "Potential": [0.3,0.3]
+        },
+        "Basic Stats": {
+          "Value": 19001,
+          "DI": 0.918,
+          "Potential": [2300,2300]
+        },
+        "Attack/Intensity": {
+          "Value": 241,
+          "DI": 1.160,
+          "Potential": [30,30]
+        },
+        "Strength/Magic": {
+          "Value": 24001,
+          "DI": 1.160,
+          "Potential": [3000,3000]
+        },
+        "Minimum Damage": {
+          "Value": 151,
+          "DI": 1.480,
+          "Potential": [18,18]
+        },
+        "Back Attack Damage":{
+          "Value": 121,
+          "DI": 1.161,
+          "Potential": [15,15]
+        },
+        "Static Damage %": {
+          "Value": 20,
+          "DI": 0.647,
+          "Potential": [1,1]
+        },
+        "Boss Added Damage":{
+          "Value": 48001,
+          "DI": 0.238,
+          "Potential": [6000,6000]
+        },
+        "Normal Added Damage":{
+          "Value": 48001,
+          "DI": 0.186,
+          "Potential": [6000,6000]
+        },
+        "Stamina": {
+          "Value": 24001,
+          "DI": 0,
+          "Potential": [3000,3000]
+        },
+        "Maximum HP %": {
+          "Value": 13,
+          "DI": 0,
+          "Potential": [1,1]
+        },
+        "Other (Non-damaging)": {
+          "Value": 1,
+          "DI": 0,
+          "Potential": [1,1]
+        },
+      },
+      "Optimal": ["Critical Damage", "Attack/Intensity %", "Boss Amplification", "Basic Stats", "Attack/Intensity"],
+      "Type": "Type A"
+    },
+    "Boots":{
+      "DI": 7.214,
+      "Stats":{
+        "Critical Damage":{
+          "Value": 151,
+          "DI": 2.276,
+          "Potential": [18,18]
+        },
+        "Basic Stats %":{
+          "Value": 25,
+          "DI": 2.130,
+          "Potential": [1,1]
+        },
+        "Attack/Intensity": {
+          "Value": 241,
+          "DI": 1.160,
+          "Potential": [30,30]
+        },
+        "Basic Stats": {
+          "Value": 19001,
+          "DI": 0.918,
+          "Potential": [2300,2300]
+        },
+        "Movement Speed": {
+          "Value": 171,
+          "DI": 0.730,
+          "Potential": [20,20]
+        },
+        "Strength/Magic": {
+          "Value": 24001,
+          "DI": 1.160,
+          "Potential": [3000,3000]
+        },
+        "Minimum Damage": {
+          "Value": 151,
+          "DI": 1.480,
+          "Potential": [18,18]
+        },
+        "Back Attack Damage":{
+          "Value": 121,
+          "DI": 1.161,
+          "Potential": [15,15]
+        },
+        "Static Damage %": {
+          "Value": 20,
+          "DI": 0.647,
+          "Potential": [1,1]
+        },
+        "Boss Added Damage":{
+          "Value": 48001,
+          "DI": 0.238,
+          "Potential": [6000,6000]
+        },
+        "Normal Added Damage":{
+          "Value": 48001,
+          "DI": 0.186,
+          "Potential": [6000,6000]
+        },
+        "Stamina": {
+          "Value": 24001,
+          "DI": 0,
+          "Potential": [3000,3000]
+        },
+        "Maximum HP %": {
+          "Value": 13,
+          "DI": 0,
+          "Potential": [1,1]
+        },
+        "Other (Non-damaging)": {
+          "Value": 1,
+          "DI": 0,
+          "Potential": [1,1]
+        },
+      },
+      "Optimal": ["Critical Damage", "Basic Stats %", "Attack/Intensity", "Basic Stats", "Movement Speed"],
+      "Type": "Type A"
+    },
+    "Sheet Link": "https://docs.google.com/spreadsheets/d/11CI-FMnoX1_D9oPgbY1cAKplOdvaOkkPzZnJ6-3l7IU/edit?usp=sharing",
+    "Potential": [0.15, 0.15]
+  },
   "[9999] Badge 6":{
     "Badge":{
       "DI": 5.308,
