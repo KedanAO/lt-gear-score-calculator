@@ -397,6 +397,7 @@ function getFinalUpgrade(item) {
     case "[9999] Badge 6":
       return ''
     case "[9999] Armor":
+    case "[sLv5] Accessories":
       return 'Ascended'
     default:
       return 'Lucent'
