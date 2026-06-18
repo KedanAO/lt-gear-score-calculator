@@ -10,9 +10,9 @@ import StatOption from './component/StatOption.vue';
 import gears from './utils/gear.js'
 import tiers from './utils/tiers.js'
 
-const gearType = ref('[9999] Armor')
-const pieceType = ref('Helmet')
-const highlightedPiece = ref(['[9999] Armor', 'Helmet'])
+const gearType = ref('[sLv5] Accessories')
+const pieceType = ref('Cloak')
+const highlightedPiece = ref(['[sLv5] Accessories', 'Cloak'])
 const valueButton = ref(90)
 
 const pieceOptions = ref('')
