@@ -111,8 +111,14 @@ function changeGear() {
 function changePiece() {
   let innerHTML = ''
   let item = Object.keys(gears[gearType.value][pieceType.value]['Stats'])
+  let sortedItem = [...item];
+  sortedItem.sort((a, b) => {
+    const statA = gears[gearType.value][pieceType.value]['Stats'][a];
+    const statB = gears[gearType.value][pieceType.value]['Stats'][b];
+    return parseFloat(statB['DI']) - parseFloat(statA['DI']);
+  });
   // item.forEach((e) => innerHTML += '<stat-option value="' + e +'"><div class="stat-option-text">' + e + '</div><div class="stat-option-subtext">Max. Value: ' + gears[gearType.value][pieceType.value]['Stats']['Value'] + ' | Max. Rating: ' + gears[gearType.value][pieceType.value]['Stats']['DI'] + '</div></stat-option>')
-  statOptions.value = item.slice()
+  statOptions.value = sortedItem.slice()
   statType.value = item.slice(0,5)
   setValues(0,0);
 
